@@ -1,9 +1,9 @@
 extends VehicleBody
 
-export var STEER_SPEED = 1.0
+export var STEER_SPEED = 1.5
 export var MAX_STEER_ANGLE = 0.5
 export var MAX_BRAKE_FORCE = 3.0
-export var MAX_ENGINE_FORCE = 80.0
+export var MAX_ENGINE_FORCE = 100.0
 
 func _physics_process(delta):
 	var brake_val = 0.0
