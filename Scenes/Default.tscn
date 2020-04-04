@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Entities/Vehicle/Vehicle.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Entities/Floor/Floor.tscn" type="PackedScene" id=2]
+
+[node name="Default" type="Spatial"]
+
+[node name="Floor" parent="." instance=ExtResource( 2 )]
+
+[node name="VehicleBody" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, 0, 0.5, 0 )
+
+[node name="VehicleCamera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.819152, 0.573577, 0, -0.573577, 0.819152, 0, 5, 6 )
